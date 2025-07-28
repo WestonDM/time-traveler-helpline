@@ -18,9 +18,20 @@ General Page Rules
 
 html {
     font-size: 16px;
+
+    background-image: url("../public/img/gear_background_dark-scaled.jpg");
+    background-color: #050506;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-size: auto;
+    box-sizing: border-box;
 }
 
 body {
+    color: #ffffff;
+    font-family: "Roboto Slab", serif;
 }
 
 h1,
@@ -35,19 +46,59 @@ a {
 }
 
 h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+p,
+ul,
+ol,
+li,
+a {
+    text-align: center;
+    font-weight: 400;
+}
+
+h1,
 .h1 {
+    font-size: 4.5rem;
 }
 
 h2,
 .h2 {
+    font-size: 3.75rem;
 }
 
 h3,
 .h3 {
+    font-size: 1.75rem;
 }
 
 h4,
 .h4 {
+    font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.25rem;
+}
+
+label {
+    font-size: 1.33rem;
+}
+
+p,
+ul,
+ol,
+li,
+a {
+    font-size: 1rem;
 }
 
 p,
@@ -64,3 +115,186 @@ Class Rules
 
 
 **************************************************/
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-basis: calc(100% - 2rem);
+    justify-content: center;
+    max-width: 1280px;
+    padding: 1rem;
+}
+
+/********************* Contact Form *********************/
+
+#contact-form {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact-form .form_row {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.form_row.form-50 {
+    flex-basis: calc(100% - 2rem);
+}
+
+.form_row.form-33 {
+    flex-basis: calc(100% - 2rem);
+}
+
+.form_row.form-100 {
+    flex-basis: calc(100% - 2rem);
+}
+
+#contact-form .form_item {
+    padding: 0 1rem 0 0;
+}
+
+#contact-form .form_item input,
+#contact-form .form_item textarea {
+    background-color: #fff;
+    border-color: #e2e7ea;
+    border-radius: 1rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 1.33rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-family: "Roboto Slab", serif;
+    padding: 1rem;
+    width: 100%;
+}
+
+#contact-form .form_item textarea {
+    resize: vertical;
+}
+
+#contact-form .form-100 .form_item {
+    flex-basis: calc(100% - 0rem);
+}
+
+#contact-form .form-50 .form_item {
+    flex-basis: calc(50% - 3rem);
+}
+
+#contact-form .form-33 .form_item {
+    flex-basis: calc(33% - 3rem);
+}
+
+#contact-form .req-icon {
+    color: #e15959;
+}
+
+#contact-form button[type="submit"] {
+    font-family: "Roboto Slab", serif;
+    border: #424035;
+    border-radius: 1.33rem;
+    color: #424035;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 1.25rem 3.75rem;
+}
+
+/********************* HEADER *********************/
+header {
+    flex-basis: 100%;
+}
+
+header .date_display {
+    text-align: center;
+}
+
+/********************* FOOTER *********************/
+
+footer {
+    background-color: #84806b;
+    /* width: calc(100% + 2rem); */
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 -1rem -1rem;
+}
+
+footer .footer_content {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+footer .footer_inner {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+}
+/**************************************************
+
+
+Media Queries
+
+
+**************************************************/
+
+/********************* TABLET *********************/
+
+@media (max-width: 1024px) {
+    h1,
+    .h1 {
+        font-size: 64px;
+    }
+
+    h2,
+    .h2 {
+        font-size: 48px;
+    }
+
+    h3,
+    .h3 {
+        font-size: 28px;
+    }
+
+    h4,
+    .h4 {
+        font-size: 24px;
+    }
+}
+
+/********************* MOBILE *********************/
+
+@media (max-width: 767px) {
+    h1,
+    .h1 {
+        font-size: 48px;
+    }
+
+    h2,
+    .h2 {
+        font-size: 36px;
+    }
+
+    h3,
+    .h3 {
+    }
+
+    h4,
+    .h4 {
+    }
+}
