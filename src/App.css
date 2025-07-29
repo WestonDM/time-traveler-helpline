@@ -226,14 +226,14 @@ h2.firstQ_header {
 
 /********************* Contact Form *********************/
 
-#contact {
+#contact form {
     width: 100%;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
 }
 
-#contact .form_row {
+#contact form .form_row {
     display: flex;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
@@ -256,12 +256,12 @@ h2.firstQ_header {
     flex-basis: calc(100% - 2rem);
 }
 
-#contact .form_item {
+#contact form .form_item {
     padding: 0 1rem 0 0;
 }
 
-#contact .form_item input,
-#contact .form_item textarea {
+#contact form .form_item input,
+#contact form .form_item textarea {
     background-color: #fff;
     border-color: #e2e7ea;
     border-radius: 1rem;
@@ -275,28 +275,28 @@ h2.firstQ_header {
     width: 100%;
 }
 
-#contact .form_item textarea {
+#contact form .form_item textarea {
     resize: vertical;
 }
 
-#contact .form-100 .form_item {
+#contact form .form-100 .form_item {
     flex-basis: calc(100% - 0rem);
 }
 
-#contact .form-50 .form_item {
+#contact form .form-50 .form_item {
     flex-basis: calc(50% - 3rem);
 }
 
-#contact .form-33 .form_item {
+#contact form .form-33 .form_item {
     flex-basis: calc(33% - 3rem);
 }
 
-#contact .req-icon {
+#contact form .req-icon {
     color: #e15959;
     padding-left: 0.25rem;
 }
 
-#contact button[type="submit"] {
+#contact form button[type="submit"] {
     font-family: "Roboto Slab", serif;
     border: #424035;
     border-radius: 1.33rem;
