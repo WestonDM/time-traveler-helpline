@@ -22,5 +22,16 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
+        <form name="contact" netlify hidden>
+            <input type="text" id="firstname" name="firstname" required />
+            <input type="text" id="lastname" name="lastname" required />
+            <input type="email" id="email" name="email" required />
+            <input type="tel" id="phone" name="phone" />
+            <input type="text" id="word-01" name="word-01" required />
+            <input type="text" id="word-02" name="word-02" required />
+            <input type="text" id="word-03" name="word-03" required />
+            <textarea id="message" name="message"></textarea>
+            <button type="submit" id="submit" name="submit">SUBMIT</button>
+        </form>
     </body>
 </html>
