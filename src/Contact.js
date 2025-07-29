@@ -4,11 +4,11 @@ export default function Contact() {
             <div>
                 <h2>Contact TTHL</h2>
                 <form
-                    id="contact-form"
-                    className="contact_form"
-                    name="contact-form"
+                    name="contact"
                     data-netlify="true"
                     method="POST"
+                    id="contact-form"
+                    className="contact_form"
                 >
                     <div className="form_row form-50">
                         <div className="form_item ">
