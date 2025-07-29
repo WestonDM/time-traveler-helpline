@@ -1,5 +1,5 @@
 export default function Randos({ randoWords }) {
-    console.log(randoWords);
+    //console.log(randoWords);
     return (
         <div className="container divider">
             <div id="randos">

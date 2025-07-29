@@ -3,7 +3,7 @@ export default function Contact() {
         <div className="contact container">
             <div>
                 <h2>Contact TTHL</h2>
-                <form id="contact-form" className="contact_form">
+                <form id="contact-form" className="contact_form" netlify>
                     <div className="form_row form-50">
                         <div className="form_item ">
                             <label htmlFor="lastname">
@@ -54,7 +54,8 @@ export default function Contact() {
                     <div className="form_row form-33">
                         <div className="form_item">
                             <label htmlFor="word-01">
-                                Word 01:<span className="req-icon">*</span>
+                                Next Week's Random Word 1:
+                                <span className="req-icon">*</span>
                                 <br />
                             </label>
                             <input
@@ -66,7 +67,8 @@ export default function Contact() {
                         </div>
                         <div className="form_item">
                             <label htmlFor="word-02">
-                                Word 02:<span className="req-icon">*</span>
+                                Next Week's Random Word 2:
+                                <span className="req-icon">*</span>
                                 <br />
                             </label>
                             <input
@@ -78,7 +80,8 @@ export default function Contact() {
                         </div>
                         <div className="form_item">
                             <label htmlFor="word-03">
-                                Word 03:<span className="req-icon">*</span>
+                                Next Week's Random Word 3:
+                                <span className="req-icon">*</span>
                                 <br />
                             </label>
                             <input
