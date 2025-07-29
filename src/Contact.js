@@ -4,7 +4,19 @@ export default function Contact() {
             <div>
                 <h2>Contact TTHL</h2>
                 <div id="contact" className="contact_form">
-                    <form name="contact" data-netlify="true" method="POST">
+                    <form
+                        name="contact"
+                        data-netlify="true"
+                        method="POST"
+                        action="/thank-you"
+                        netlify-honeypot="bot-field"
+                    >
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p hidden>
+                            <label>
+                                Don’t fill this out: <input name="bot-field" />
+                            </label>
+                        </p>
                         <div className="form_row form-50">
                             <div className="form_item ">
                                 <label htmlFor="lastname">
