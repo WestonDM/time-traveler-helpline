@@ -1,7 +1,7 @@
 import Steps from "./Steps";
 export default function FirstQs() {
     return (
-        <div className="container" id="firstQs">
+        <div className="container divider" id="firstQs">
             <>
                 <Steps
                     stepImage="./img/history.svg"
@@ -20,7 +20,6 @@ export default function FirstQs() {
                 />
             </>
             <h2 className="h1 firstQ_header">We are here for you!</h2>
-            <div className="divider"></div>
         </div>
     );
 }

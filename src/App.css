@@ -121,7 +121,7 @@ Class Rules
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
 }
 
 .container {
@@ -129,14 +129,29 @@ Class Rules
     flex-basis: calc(100% - 2rem);
     justify-content: center;
     max-width: 1120px;
-    padding: 1rem;
+    padding: 4rem 1rem 4rem;
 }
 
 .divider {
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     border-bottom: 1px solid #ffffff;
+}
+
+/********************* HEADER *********************/
+
+header.container {
+    flex-basis: 100%;
+    padding-top: 1rem;
+}
+
+header .date_display {
+    text-align: center;
+}
+
+header .date_display h3 {
+    margin-top: 0.5rem;
+}
+header .date_display h4 {
+    margin: 3.5rem 0;
 }
 
 /********************* Steps *********************/
@@ -257,19 +272,6 @@ Class Rules
     cursor: pointer;
     font-size: 1.25rem;
     padding: 1.25rem 3.75rem;
-}
-
-/********************* HEADER *********************/
-header {
-    flex-basis: 100%;
-}
-
-header .date_display {
-    text-align: center;
-}
-
-header .date_display h3 {
-    margin-top: 0.5rem;
 }
 
 /********************* FOOTER *********************/

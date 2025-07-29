@@ -1,7 +1,7 @@
 import Steps from "./Steps";
 export default function Instructions() {
     return (
-        <div className="container" id="instructions">
+        <div className="container divider" id="instructions">
             <div>
                 <h3>How it works:</h3>
                 <div className="instructions_grp">
@@ -31,8 +31,6 @@ export default function Instructions() {
                         hl="h4"
                     />
                 </div>
-
-                <div className="divider"></div>
             </div>
         </div>
     );
