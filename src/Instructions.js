@@ -6,17 +6,17 @@ export default function Instructions() {
                 <h3>How it works:</h3>
                 <div className="instructions_grp">
                     <Steps
-                        stepImage="./img/history.svg"
+                        stepImage="./img/keyboard.svg"
                         stepText="Fill out the form below to get in contact with TTHL."
                         hl="h4"
                     />
                     <Steps
-                        stepImage="./img/contacts.svg"
+                        stepImage="./img/list.svg"
                         stepText="On this page you will see three random words. These words change every week."
                         hl="h4"
                     />
                     <Steps
-                        stepImage="./img/butterfly.svg"
+                        stepImage="./img/checkmark.svg"
                         stepText={
                             <>
                                 Fill in <em>next week's words</em> on the form
@@ -26,7 +26,7 @@ export default function Instructions() {
                         hl="h4"
                     />
                     <Steps
-                        stepImage="./img/butterfly.svg"
+                        stepImage="./img/phone.svg"
                         stepText="If you answer correctly, a representative of the TTHL will be in contact with you within 48 hours."
                         hl="h4"
                     />

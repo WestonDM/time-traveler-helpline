@@ -7,8 +7,6 @@ import Randos from "./Randos";
 import Footer from "./Footer";
 import wordList from "./wordlist.json";
 
-let wordGrp = [];
-
 function App() {
     function generateRandomNumbersArray() {
         const randomNumbers = [];

@@ -19,7 +19,7 @@ export default function FirstQs() {
                     hl="h3"
                 />
             </>
-            <h2 className="h1 firstQ_header">We are here for you!</h2>
+            <h2 className="firstQ_header">We are here for you!</h2>
         </div>
     );
 }

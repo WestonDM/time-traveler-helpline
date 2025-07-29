@@ -67,11 +67,13 @@ a {
 h1,
 .h1 {
     font-size: 4.5rem;
+    font-weight: 500;
 }
 
 h2,
 .h2 {
     font-size: 3.75rem;
+    font-weight: 500;
 }
 
 h3,
@@ -129,7 +131,8 @@ Class Rules
     flex-basis: calc(100% - 2rem);
     justify-content: center;
     max-width: 1120px;
-    padding: 4rem 1rem 4rem;
+    /* padding: 4rem 1rem 4rem; */
+    padding: 1rem 1rem 3rem;
 }
 
 .divider {
@@ -151,7 +154,7 @@ header .date_display h3 {
     margin-top: 0.5rem;
 }
 header .date_display h4 {
-    margin: 3.5rem 0;
+    margin: -0.5rem 0;
 }
 
 /********************* Steps *********************/
@@ -166,12 +169,18 @@ header .date_display h4 {
 .step_image {
     max-width: 100px;
     max-height: 100px;
+    padding-bottom: 1em;
 }
 
 /********************* Initial Qs *********************/
 
 #firstQs {
     flex-wrap: wrap;
+}
+
+h2.firstQ_header {
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
 }
 
 #firstQs .step_img_cont {
@@ -184,13 +193,35 @@ header .date_display h4 {
 #instructions .instructions_grp {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #instructions .step_img_cont {
     flex-basis: calc(25% - 3rem);
     justify-content: center;
     text-align: center;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
+}
+
+/********************* RANDOM WORD SECTION *********************/
+
+.rando_word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rando_word h2 {
+    margin: 1rem 0;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.rando_word img {
+    max-width: 58px;
+    max-height: 58px;
+    padding-right: 2rem;
 }
 
 /********************* Contact Form *********************/
@@ -273,24 +304,6 @@ header .date_display h4 {
     cursor: pointer;
     font-size: 1.25rem;
     padding: 1.25rem 3.75rem;
-}
-
-/********************* RANDOM WORD SECTION *********************/
-
-.rando_word {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.rando_word h2 {
-    margin: 1rem 0;
-}
-
-.rando_word img {
-    max-width: 64px;
-    max-height: 64px;
-    padding-right: 2rem;
 }
 
 /********************* FOOTER *********************/

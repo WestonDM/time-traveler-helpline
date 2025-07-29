@@ -2,7 +2,7 @@ export default function Contact() {
     return (
         <div className="contact container">
             <div>
-                <h2 className="h1">Contact TTHL</h2>
+                <h2>Contact TTHL</h2>
                 <form id="contact-form" className="contact_form">
                     <div className="form_row form-50">
                         <div className="form_item ">

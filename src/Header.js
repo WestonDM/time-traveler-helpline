@@ -10,7 +10,7 @@ export default function Header() {
                 <h1>
                     <span className="h3">Welcome to</span>
                     <br />
-                    <span className="h1">The Time Traveler Helpline</span>
+                    <span className="h1">THE TIME TRAVELER’S HELPLINE</span>
                 </h1>
                 <h4>
                     The premiere online resource for the waylaid temporal
