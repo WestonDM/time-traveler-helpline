@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 
-Name: Time Traveller Helpline
+Name: Time Traveler Helpline
 URI: timetravelerhelpline.com
 Description: This site was developed by Weston Digital Media. Copyright 2025.  Or 3125.  Or 10191.  Or perhaps 1955.  Dealer's choice, really.
 Author: Chris Weston
@@ -262,6 +262,7 @@ header .date_display h4 {
 
 #contact-form .req-icon {
     color: #e15959;
+    padding-left: 0.25rem;
 }
 
 #contact-form button[type="submit"] {
@@ -274,6 +275,18 @@ header .date_display h4 {
     padding: 1.25rem 3.75rem;
 }
 
+/********************* RANDOM WORD SECTION *********************/
+
+.rando_word img {
+    max-width: 64px;
+    max-height: 64px;
+    padding-right: 2rem;
+}
+.rando_word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /********************* FOOTER *********************/
 
 footer {
