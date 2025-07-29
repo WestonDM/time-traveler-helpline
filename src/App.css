@@ -128,8 +128,54 @@ Class Rules
     display: flex;
     flex-basis: calc(100% - 2rem);
     justify-content: center;
-    max-width: 1280px;
+    max-width: 1120px;
     padding: 1rem;
+}
+
+.divider {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ffffff;
+}
+
+/********************* Steps *********************/
+
+.step_cont {
+    text-align: center;
+}
+
+.step_img_cont {
+}
+
+.step_image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/********************* Initial Qs *********************/
+
+#firstQs {
+    flex-wrap: wrap;
+}
+
+#firstQs .step_img_cont {
+    flex-basis: calc(33% - 2rem);
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#instructions .instructions_grp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#instructions .step_img_cont {
+    flex-basis: calc(25% - 3rem);
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.5rem;
 }
 
 /********************* Contact Form *********************/
@@ -220,6 +266,10 @@ header {
 
 header .date_display {
     text-align: center;
+}
+
+header .date_display h3 {
+    margin-top: 0.5rem;
 }
 
 /********************* FOOTER *********************/
