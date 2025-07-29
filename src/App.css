@@ -277,16 +277,22 @@ header .date_display h4 {
 
 /********************* RANDOM WORD SECTION *********************/
 
-.rando_word img {
-    max-width: 64px;
-    max-height: 64px;
-    padding-right: 2rem;
-}
 .rando_word {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.rando_word h2 {
+    margin: 1rem 0;
+}
+
+.rando_word img {
+    max-width: 64px;
+    max-height: 64px;
+    padding-right: 2rem;
+}
+
 /********************* FOOTER *********************/
 
 footer {

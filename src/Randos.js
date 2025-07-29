@@ -1,8 +1,9 @@
 export default function Randos({ randoWords }) {
+    console.log(randoWords);
     return (
         <div className="container divider">
             <div id="randos">
-                <h2 className="h1 firstQ_header">This Week's Random Words</h2>
+                <h2 className="h1 firstQ_header">This Week's Random Words:</h2>
                 <>
                     {randoWords.map((word) => (
                         <div className="rando_word" key={word.id}>
