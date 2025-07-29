@@ -109,9 +109,12 @@ export default function Contact() {
                         </div>
                         <div className="form_row form-100">
                             <div className="form_item">
-                                <button type="submit" id="submit" name="submit">
-                                    SUBMIT
-                                </button>
+                                <input
+                                    type="submit"
+                                    id="submit"
+                                    name="submit"
+                                    value="SUBMIT"
+                                />
                             </div>
                         </div>
                     </form>

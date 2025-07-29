@@ -296,7 +296,7 @@ h2.firstQ_header {
     padding-left: 0.25rem;
 }
 
-#contact form button[type="submit"] {
+#contact form input#submit {
     font-family: "Roboto Slab", serif;
     border: #424035;
     border-radius: 1.33rem;
@@ -304,6 +304,7 @@ h2.firstQ_header {
     cursor: pointer;
     font-size: 1.25rem;
     padding: 1.25rem 3.75rem;
+    width: auto;
 }
 
 /********************* FOOTER *********************/
