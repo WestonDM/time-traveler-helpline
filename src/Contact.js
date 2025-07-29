@@ -7,7 +7,7 @@ export default function Contact() {
                     name="contact"
                     data-netlify="true"
                     method="POST"
-                    id="contact-form"
+                    id="contact"
                     className="contact_form"
                 >
                     <div className="form_row form-50">
