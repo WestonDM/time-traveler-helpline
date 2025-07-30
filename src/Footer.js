@@ -1,8 +1,8 @@
 export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (
-        <footer>
-            <div className="container">
+        <footer className="main">
+            <div className="content">
                 <div className="footer_content">
                     <div className="footer_inner">
                         <h4>The Time Traveler’s Helpline</h4>
