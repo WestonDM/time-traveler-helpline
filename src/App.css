@@ -92,7 +92,7 @@ h5,
 }
 
 label {
-    font-size: 1.33rem;
+    font-size: 1.25rem;
 }
 
 p,
@@ -237,6 +237,7 @@ h2.firstQ_header {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #contact form .form_row {
@@ -251,15 +252,15 @@ h2.firstQ_header {
 }
 
 .form_row.form-50 {
-    flex-basis: calc(100% - 2rem);
+    flex-basis: calc(100%);
 }
 
 .form_row.form-33 {
-    flex-basis: calc(100% - 2rem);
+    flex-basis: calc(100%);
 }
 
 .form_row.form-100 {
-    flex-basis: calc(100% - 2rem);
+    flex-basis: calc(100%);
 }
 
 #contact form .form_item {
@@ -278,7 +279,7 @@ h2.firstQ_header {
     margin-bottom: 1.25rem;
     font-family: "Roboto Slab", serif;
     padding: 1rem;
-    width: 100%;
+    width: calc(100% - 1rem - 4px);
 }
 
 #contact form .form_item textarea {
