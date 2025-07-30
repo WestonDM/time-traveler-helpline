@@ -163,6 +163,12 @@ header .date_display h4 {
     margin: -0.5rem 0;
 }
 
+header #main-hl {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 3.5rem;
+}
+
 /********************* Steps *********************/
 
 .step_cont {
