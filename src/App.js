@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Header from "./Header";
 import Contact from "./Contact";
@@ -5,37 +6,40 @@ import FirstQs from "./FirstQs";
 import Instructions from "./Instructions";
 import Randos from "./Randos";
 import Footer from "./Footer";
-import wordList from "./wordlist.json";
+import words from "./wordlist.json";
+
+const startDate = new Date("2025-07-30");
+
+function getCurrentWeekNumber() {
+    const now = new Date();
+    const msInWeek = 7 * 24 * 60 * 60 * 1000;
+    const diff = now - startDate;
+    return Math.floor(diff / msInWeek);
+}
+
+function getWeeklyWords(wordList, wordsPerWeek = 3) {
+    const week = getCurrentWeekNumber();
+    const startIndex = week * wordsPerWeek;
+    return wordList.slice(startIndex, startIndex + wordsPerWeek);
+}
 
 function App() {
-    function generateRandomNumbersArray() {
-        const randomNumbers = [];
-
-        for (let i = 0; i < 3; i++) {
-            const randomNumber = Math.floor(Math.random() * (674 - 0 + 1)) + 0;
-
-            randomNumbers.push(randomNumber);
-        }
-
-        return randomNumbers;
-    }
-
-    const resultArray = generateRandomNumbersArray();
-
-    const randoWords = [];
-    for (let i = 0; i < 3; i++) {
-        randoWords[i] = { id: i + 1, word: wordList.words[resultArray[i]] };
-    }
-
+    const randoWords = getWeeklyWords(words.words);
     return (
-        <div className="App main">
-            <Header />
-            <FirstQs />
-            <Instructions />
-            <Randos randoWords={randoWords} />
-            <Contact />
-            <Footer />
-        </div>
+        <>
+            <div className="container">
+                <div className="App main">
+                    <Header />
+                    <FirstQs />
+                    <Instructions />
+                    <Randos randoWords={randoWords} />
+                    <Contact />
+                </div>
+            </div>
+            <div className="container" id="footer-container">
+                <Footer />
+            </div>
+        </>
     );
 }
 
