@@ -118,11 +118,18 @@ Class Rules
 
 **************************************************/
 
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 1120px;
     padding: 0 1rem 1rem;
 }
 
@@ -130,8 +137,7 @@ Class Rules
     display: flex;
     flex-basis: calc(100% - 2rem);
     justify-content: center;
-    max-width: 1120px;
-    /* padding: 4rem 1rem 4rem; */
+
     padding: 1rem 1rem 3rem;
 }
 
@@ -316,7 +322,11 @@ footer {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 0 -1rem -1rem;
+    margin: 0 0 -1rem;
+}
+
+footer .container {
+    padding: 1rem 2rem;
 }
 
 footer .footer_content {
@@ -325,11 +335,13 @@ footer .footer_content {
     border: 1px solid #ffffff;
     width: 100%;
 }
+
 footer .footer_inner {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid #ffffff;
 }
+
 /**************************************************
 
 
