@@ -27,12 +27,17 @@ function App() {
     const randoWords = getWeeklyWords(words.words);
     return (
         <>
-            <div className="App main">
-                <Header />
-                <FirstQs />
-                <Instructions />
-                <Randos randoWords={randoWords} />
-                <Contact /> <Footer />
+            <div className="container">
+                <div className="App main">
+                    <Header />
+                    <FirstQs />
+                    <Instructions />
+                    <Randos randoWords={randoWords} />
+                    <Contact />
+                </div>
+            </div>
+            <div className="container" id="footer-container">
+                <Footer />
             </div>
         </>
     );

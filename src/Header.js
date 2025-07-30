@@ -3,7 +3,7 @@ import CurrentTime from "./CurrentTime";
 
 export default function Header() {
     return (
-        <header className="container">
+        <header className="content">
             <div className="header">
                 <CurrentDate />
                 <CurrentTime />
