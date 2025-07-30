@@ -388,6 +388,12 @@ Media Queries
     .h4 {
         font-size: 24px;
     }
+
+    #firstQs .step_img_cont,
+    #instructions .step_img_cont {
+        flex-basis: calc(50% - 2rem);
+        padding-bottom: 3rem;
+    }
 }
 
 /********************* MOBILE *********************/
@@ -409,5 +415,20 @@ Media Queries
 
     h4,
     .h4 {
+    }
+
+    #firstQs .step_img_cont,
+    #instructions .step_img_cont {
+        flex-basis: calc(100% - 2rem);
+        padding-bottom: 3rem;
+    }
+    #contact form .form_row.form-50 .form_item {
+        flex-basis: calc(100%);
+    }
+    #contact form .form_row.form-33 .form_item {
+        flex-basis: calc(100%);
+    }
+    #contact form .form_row.form-100 .form_item {
+        flex-basis: calc(100%);
     }
 }
