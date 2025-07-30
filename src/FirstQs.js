@@ -1,7 +1,7 @@
 import Steps from "./Steps";
 export default function FirstQs() {
     return (
-        <div className="container divider" id="firstQs">
+        <div className="content divider" id="firstQs">
             <>
                 <Steps
                     stepImage="./img/history.svg"

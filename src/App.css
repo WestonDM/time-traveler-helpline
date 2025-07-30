@@ -32,6 +32,7 @@ html {
 body {
     color: #ffffff;
     font-family: "Roboto Slab", serif;
+    margin: 0;
 }
 
 h1,
@@ -118,7 +119,7 @@ Class Rules
 
 **************************************************/
 
-#root {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +134,7 @@ Class Rules
     padding: 0 1rem 1rem;
 }
 
-.container {
+.content {
     display: flex;
     flex-basis: calc(100% - 2rem);
     justify-content: center;
@@ -147,7 +148,7 @@ Class Rules
 
 /********************* HEADER *********************/
 
-header.container {
+header.content {
     flex-basis: 100%;
     padding-top: 1rem;
 }
@@ -161,6 +162,12 @@ header .date_display h3 {
 }
 header .date_display h4 {
     margin: -0.5rem 0;
+}
+
+header #main-hl {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 3.5rem;
 }
 
 /********************* Steps *********************/
@@ -316,28 +323,32 @@ h2.firstQ_header {
 
 /********************* FOOTER *********************/
 
-footer {
+#footer-container {
     background-color: #84806b;
-    /* width: calc(100% + 2rem); */
+}
+
+footer.main {
+    background-color: #84806b;
+
     width: 100vw;
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 0 0 -1rem;
+    padding: 0;
 }
 
-footer .container {
+footer.main .content {
     padding: 1rem 2rem;
 }
 
-footer .footer_content {
-    margin: 1rem 0;
-    padding: 1rem;
+footer.main .footer_content {
+    margin: 0.125rem 0;
+    padding: 0.125rem;
     border: 1px solid #ffffff;
     width: 100%;
 }
 
-footer .footer_inner {
+footer.main .footer_inner {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid #ffffff;

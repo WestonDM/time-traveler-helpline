@@ -1,7 +1,7 @@
 export default function Randos({ randoWords }) {
     console.log(randoWords);
     return (
-        <div className="container divider">
+        <div className="content divider">
             <div id="randos">
                 <h2 className="firstQ_header">This Week's Random Words:</h2>
                 <>
