@@ -6,9 +6,10 @@ import FirstQs from "./FirstQs";
 import Instructions from "./Instructions";
 import Randos from "./Randos";
 import Footer from "./Footer";
-import words from "./wordlist.json";
+import encryptedWordlist from "./wordlist.encrypted.json";
+import { decryptWordlist } from "./encryptionUtils";
 
-const startDate = new Date("2025-07-30");
+const startDate = new Date("2025-09-30");
 
 function getCurrentWeekNumber() {
     const now = new Date();
@@ -24,7 +25,13 @@ function getWeeklyWords(wordList, wordsPerWeek = 3) {
 }
 
 function App() {
-    const randoWords = getWeeklyWords(words.words);
+    // Decrypt the wordlist
+    const decryptedWordlist = decryptWordlist(encryptedWordlist.encrypted);
+
+    // Fallback to empty array if decryption fails
+    const words = decryptedWordlist ? decryptedWordlist.words : [];
+
+    const randoWords = getWeeklyWords(words);
     return (
         <>
             <div className="container">
