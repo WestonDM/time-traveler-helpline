@@ -6,10 +6,10 @@ import FirstQs from "./FirstQs";
 import Instructions from "./Instructions";
 import Randos from "./Randos";
 import Footer from "./Footer";
-import encryptedWordlist from "./wordlist.encrypted.json";
+import encryptedWordlist from "./wordlist-new.encrypted.json";
 import { decryptWordlist } from "./encryptionUtils";
 
-const startDate = new Date("2025-09-30");
+const startDate = new Date("2025-10-14");
 
 function getCurrentWeekNumber() {
     const now = new Date();
