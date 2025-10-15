@@ -30,3 +30,5 @@ src/wordlist.encrypted.json
 # Keep only the encrypted version public
 !src/wordlist-new.encrypted.json
 !src/encryptionUtils.js
+
+zOLD/
