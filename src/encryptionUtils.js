@@ -1,9 +1,13 @@
 // Simple encryption/decryption utilities for the wordlist
 // This provides basic obfuscation to prevent casual viewing of the wordlist
 
-// Get encryption key from environment variable or use a default
-const ENCRYPTION_KEY =
-    process.env.REACT_APP_ENCRYPTION_KEY || "TimeTraveler2025!@#";
+// Get encryption key from environment variable (no default)
+const ENCRYPTION_KEY = process.env.REACT_APP_ENCRYPTION_KEY;
+if (!ENCRYPTION_KEY) {
+    throw new Error(
+        "Missing REACT_APP_ENCRYPTION_KEY environment variable."
+    );
+}
 
 // Simple XOR cipher for encryption
 function xorEncrypt(text, key) {
