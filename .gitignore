@@ -1,25 +1,41 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
+# Dependencies
+node_modules/
 /.pnp
 .pnp.js
 
-# testing
+# Testing
 /coverage
 
-# production
+# Production
 /build
 
-# misc
+# Misc
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Encryption sensitive files - DO NOT COMMIT
+src/wordlist-new.json
+encrypt-new-wordlist.js
+encrypt-wordlist.js
+src/wordlist.encrypted.json
+
+# Keep only the encrypted version public
+!src/wordlist-new.encrypted.json
+!src/encryptionUtils.js
+
 zOLD/
-temp.js

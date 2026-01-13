@@ -1,0 +1,14 @@
+[build]
+  publish = "build"
+  command = "npm run build"
+
+[build.environment]
+  # Set this in Netlify UI for production builds (do not hardcode here)
+  # REACT_APP_ENCRYPTION_KEY is expected to be defined in the Netlify site settings
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+
